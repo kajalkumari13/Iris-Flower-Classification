@@ -1,81 +1,92 @@
 Iris Flower Classification
+Overview
 
-Project Overview
+This project demonstrates how to build a machine learning model that classifies iris flowers into three species: Setosa, Versicolor, and Virginica.
 
-The Iris dataset is one of the most famous datasets in machine learning, often used for classification tasks. It contains measurements of 150 iris flowers belonging to three species: Setosa, Versicolor, and Virginica. The dataset includes four features:
+The Iris dataset is one of the most popular datasets in the machine learning community. It contains measurements of flower sepals and petals, which can be used to predict the species.
 
-Sepal Length
+In this project, the workflow covers everything from exploratory data analysis (EDA) to training a Decision Tree Classifier, evaluating the model, and making predictions on new data.
 
-Sepal Width
+Features of This Project
 
-Petal Length
+Loads and explores the Iris dataset using pandas, seaborn, and matplotlib
 
-Petal Width
+Performs EDA with pair plots, heatmaps, and summary statistics
 
-The goal of this project is to build a supervised machine learning model that can accurately classify the species of an iris flower based on these features.
+Splits the dataset into training and testing sets
 
- Steps Involved
+Trains a Decision Tree Classifier with entropy as the splitting criterion
 
-Data Loading
+Evaluates model performance using accuracy, confusion matrix, and classification report
 
-Used sklearn.datasets to load the Iris dataset.
+Visualizes the trained decision tree and feature importance
 
-Converted into features (X) and target labels (y).
+Makes predictions on new flower measurements
 
-Data Preprocessing
+Requirements
 
-Checked for missing values (none in this dataset).
+Make sure you have Python installed (version 3.8 or higher is recommended). The following libraries are required:
 
-Separated data into features and target labels.
+pip install numpy pandas matplotlib seaborn scikit-learn
 
-Train-Test Split
 
-Divided dataset into training (80%) and testing (20%) sets using train_test_split().
+Alternatively, you can install them using the requirements.txt file:
 
-Model Training
+pip install -r requirements.txt
 
-Implemented a Decision Tree Classifier from sklearn.tree.
+Project Setup
 
-Trained the model on the training dataset.
+Clone this repository to your system:
 
-Model Evaluation
+git clone https://github.com/kajalkumari13/Iris-Flower-Classification
 
-Measured performance using accuracy score, confusion matrix, and classification report.
+Install dependencies:
 
-Visualized results using heatmap and decision tree diagram.
+pip install -r requirements.txt
 
-Prediction
 
-Tested with a new input sample: [5.0, 3.4, 1.5, 0.2]
+Run the project:
 
-Model correctly predicted the species as Setosa.
+python iris_classifier.py
 
- Results
+How the Code Works
 
-Achieved high accuracy (≈ 95–100%) on the test dataset.
+Load the dataset – The Iris dataset is loaded from scikit-learn and converted into a pandas DataFrame.
 
-Confusion matrix showed correct classification for most test samples.
+EDA (Exploratory Data Analysis) – Visualizations such as count plots, pair plots, and heatmaps help understand relationships between features.
 
-Feature importance revealed that petal length and petal width are the most significant features.
+Data preparation – The dataset is split into training and testing sets.
 
- Applications
+Model training – A Decision Tree Classifier (with entropy and max_depth=3) is trained on the data.
 
-Automated flower classification in botanical research.
+Model evaluation – Accuracy score, classification report, and confusion matrix are used to evaluate performance.
 
-Can be extended for plant species recognition.
+Visualization – The decision tree is plotted, and feature importance is displayed to understand how the model makes predictions.
 
-Serves as a beginner-friendly ML project for learning supervised classification.
+Prediction – The model predicts the species of a new flower when given its measurements.
 
- Technologies Used
+Example Output
 
-Python
+When running the code, you can expect outputs such as:
 
-Scikit-learn
+The dataset’s summary and sample rows
 
-Pandas
+Distribution plots of species
 
-Matplotlib & Seaborn
+A confusion matrix showing correct and incorrect predictions
 
-👩‍💻 Author
+A decision tree diagram
 
-Kajal Kumari
+Prediction for a new flower input (e.g., [5.0, 3.4, 1.5, 0.2] → Setosa)
+
+Conclusion
+
+This project serves as a complete walkthrough of a simple yet powerful machine learning classification task. It demonstrates:
+
+How to analyze data visually
+
+How to train and evaluate a classifier
+
+How to interpret results with decision tree visualization and feature importance
+
+The Iris dataset remains a great starting point for anyone learning data science, and this project is designed to be both educational and practical.
