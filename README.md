@@ -1,4 +1,5 @@
-**Iris Flower Classification**
+***Iris Flower Classification***
+
 
 *Overview*
 
@@ -7,6 +8,7 @@ This project demonstrates how to build a machine learning model that classifies 
 The Iris dataset is one of the most popular datasets in the machine learning community. It contains measurements of flower sepals and petals, which can be used to predict the species.
 
 In this project, the workflow covers everything from exploratory data analysis (EDA) to training a Decision Tree Classifier, evaluating the model, and making predictions on new data.
+
 
 
 *Features of This Project*
@@ -26,6 +28,7 @@ In this project, the workflow covers everything from exploratory data analysis (
 -Makes predictions on new flower measurements
 
 
+
 *Requirements*
 
 Make sure you have Python installed (version 3.8 or higher is recommended). The following libraries are required:
@@ -36,6 +39,7 @@ Make sure you have Python installed (version 3.8 or higher is recommended). The 
 Alternatively, you can install them using the requirements.txt file:
 
 [pip install -r requirements.txt]
+
 
 
 *Project Setup*
@@ -56,6 +60,7 @@ Alternatively, you can install them using the requirements.txt file:
 [python iris_classifier.py]
 
 
+
 *How the Code Works*
 
 1. Load the dataset – The Iris dataset is loaded from scikit-learn and converted into a pandas DataFrame.
@@ -73,6 +78,7 @@ Alternatively, you can install them using the requirements.txt file:
 7. Prediction – The model predicts the species of a new flower when given its measurements.
    
 
+
 *Example Output*
 
 When running the code, you can expect outputs such as:
@@ -86,6 +92,7 @@ When running the code, you can expect outputs such as:
 -A decision tree diagram
 
 -Prediction for a new flower input (e.g., [5.0, 3.4, 1.5, 0.2] → Setosa)
+
 
 
 *Conclusion*
